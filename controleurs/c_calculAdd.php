@@ -10,8 +10,8 @@ On calcul la distance entre les 2 adresses saisies
       header("location: ../view/v_accueil.php?erreur=calcul");
     }
     else {
-      $addressFrom = $_POST['num_A']." rue ".$_POST['rue_A']." ".$_POST['cp_A']." ".$_POST['ville_A']." ".$_POST['pays_A'];
-      $addressTo   = $_POST['num_R']." rue ".$_POST['rue_R']." ".$_POST['cp_R']." ".$_POST['ville_R']." ".$_POST['pays_R'];
+      $addressFrom = $_POST['num_A']." rue ".$_POST['rue_A'].", ".$_POST['cp_A']." ".$_POST['ville_A']." ".$_POST['pays_A'];
+      $addressTo   = $_POST['num_R']." rue ".$_POST['rue_R'].", ".$_POST['cp_R']." ".$_POST['ville_R']." ".$_POST['pays_R'];
       // On récupère la distance en km
       $getDistance = getDistance($addressFrom, $addressTo);
       if($getDistance=="NAN km"){
