@@ -40,7 +40,7 @@
         {
         echo '<div class="success">
                 <h5>Adresse aller:</h5>'.$_GET['add1'].'
-                <h5>Adresse aller:</h5>'.$_GET['add2'].'
+                <h5>Adresse retour:</h5>'.$_GET['add2'].'
                 <h5>Distance: '.$_GET['dist'].'</h5>
               </div>';
         }
